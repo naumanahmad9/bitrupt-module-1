@@ -1,0 +1,152 @@
+:root {
+  --bg-color-primary: #d3d3d3;
+  --bg-color-secondary: #ffefd5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color-primary);
+  list-style: none;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.nav-list .nav-title {
+  flex: 1;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.nav-list .nav-logo {
+  margin: 12px 30px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.hero-container aside {
+  flex: 1;
+  border: 1px solid grey;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: var(--bg-color-secondary);
+}
+.sidebar-list-container {
+  width: 100%;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  padding: 0;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-list li {
+  width: 100%;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--bg-color-primary);
+}
+
+.sidebar-list li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.sidebar-logout {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.sidebar-logout button {
+  width: 100%;
+  padding: 20px;
+  margin: 15px 0;
+  text-align: center;
+  background-color: var(--bg-color-primary);
+  border: none;
+}
+
+.sidebar-logout button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.hero-main {
+  flex: 6;
+  margin-left: 15px;
+  padding: 30px;
+  background-color: var(--bg-color-primary);
+  border: 1px solid grey;
+}
+.hero {
+  display: flex;
+}
+.hero-child-left {
+  flex: 1;
+  padding: 40px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: var(--bg-color-secondary);
+}
+
+.hero-child-right {
+  flex: 1;
+}
+
+.hero-quote {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 30px;
+}
+
+.hero-author {
+  margin-left: 350px;
+  font-size: 22px;
+}
+
+.hero-child-left p {
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.hero-image {
+  height: 600px;
+  width: 100%;
+}

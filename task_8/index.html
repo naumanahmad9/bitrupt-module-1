@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nauman Ahmad">
+    <title>Bitrupt Trainee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="login-main">
+        <div class="login-container">
+
+            <div class="login-logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+
+            <div class="login-form">
+                <form action="./home.html" onsubmit="return loginValidation()" method="POST">
+                    <input type="email" name="email" id="login-email" class="login-input" placeholder="Email" required >
+                    <input type="password" name="password" id="login-password" class="login-input" placeholder="Password" required >
+                    <button class="login-btn">Login</button>
+                </form>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="./js/formValidation.js"></script>
+</body>
+</html>

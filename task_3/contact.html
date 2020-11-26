@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nauman Ahmad">
+    <title>Bitrupt Trainee</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+
+            <!-- Navbar start -->
+            <nav>
+                <ul class="nav-list">
+                    <li> <img class="nav-logo" src="./images/logo.png" alt="logo" /> </li>
+                    <li class="nav-title"> <h1>my first website by bitrupt</h1> </li>
+                </ul>
+            </nav>
+            <!-- Navbar end -->
+
+        </header>
+
+        <section class="hero-container">
+            <aside >
+
+                <!-- Sidebar start -->
+                <div class="sidebar">
+                    <div class="sidebar-list-container">
+                        <ul class="sidebar-list">
+                            <a href="index.html"> <li> Home </li> </a>
+                            <a href="profile.html"> <li> Profile </li> </a>
+                            <a href="about.html"> <li> About Us </li> </a>
+                            <a href="contact.html"> <li> Contact Us </li> </a>
+                        </ul>
+                    </div>
+                    <div class="sidebar-logout">
+                        <button> <a href="login.html">Log out</a> </button>
+                    </div>
+                </div>
+                <!-- Sidebar end -->
+
+            </aside>
+            <section class="hero-main">
+                
+                <div class="hero">
+                    <div class="hero-child-left">
+                        
+                    <!-- form start -->
+                        <form action="" id="form" onsubmit="return validation()" method="post">
+
+                            <div class="form-section">
+                                <label for="input-name">Full name:</label>
+                                <input type="text" id="input-name" name="name" placeholder="Your name..." required >
+                            </div>
+
+                            <div class="form-section">
+                                <label for="input-email">Email:</label>
+                                <input type="email" id="input-email" name="email" placeholder="Your email..." required >
+                            </div>
+
+                            <div class="form-section">
+                                <label for="input-country">Country:</label>
+                                <select name="country" id="input-country">
+                                    <option value="Pakistan" selected>Pakistan</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+
+                            <div class="form-section">
+                                <label for="input-subject">Subject:</label>
+                                <input type="text" id="input-subject" name="subject" placeholder="Subject..." required >
+                            </div>
+
+                            <div class="form-section" id="form-section-last">
+                                <label for="input-message">Your Message:</label> <br>
+                                <textarea id="input-message" name="message" rows="6" cols="52" placeholder="Write something..." required></textarea>
+                            </div>
+
+                            <div id="form-submit-section">
+                                <input type="submit" id="input-submit" name="submit" value="Submit" required >
+                            </div>
+                            
+                        </form>
+                    <!-- form end -->
+
+                    </div>
+                    <div class="hero-child-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14474.690897813894!2d67.0703064!3d24.9091427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71747af0780cf74f!2sBitrupt!5e0!3m2!1sen!2s!4v1606052317697!5m2!1sen!2s" class="iframe" width="620" height="580" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <script type="text/javascript"  src="./js/formValidation.js"></script>
+</body>
+</html>
